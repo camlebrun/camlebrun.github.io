@@ -142,6 +142,11 @@ Camille Lebrun
             </a>
 
             
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder="Search ..."
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
 
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -154,6 +159,12 @@ Camille Lebrun
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder="Search ..." aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
                     
 
                     
@@ -297,7 +308,7 @@ Camille Lebrun
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
-                        <img src="/images/hero.svg" 
+                        <img src="" 
                             class="img-thumbnail mx-auto" 
                             alt=""
                         >
@@ -575,28 +586,22 @@ Camille Lebrun
         <h3 class="text-center bg-transparent">About Me</h3>
         <div class="bg-transparent row justify-content-center px-3 py-5">
             
-            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
-                <div class="image d-flex px-5">
-                    <img src="/images/me.png" class="img-thumbnail mx-auto rounded-circle" alt="">
-                </div>
-            </div>
-            
             <div class="col-sm-12 col-md-12 col-lg-8 content">
                 After a master’s degree in structural biochemistry I decided to focus on Data and artificial intelligence.
 I did an internship as a data analyst at Click and Boat, which con;rmed my choice. In order to deepen my skills in Data Science, I have integrated the master Data IA at Hetic in November 2022.
 I believe that Data and AI must be on the side of the Human, ethical at the heart of our practice.
 Projects that combine data, AI, and ethics for the common good are the projects that interest me the most
-I am looking for a 6 month internship in artificial Intelligence based in Paris.
+<br><strong>I am looking for a 6 month internship in Artificial Intelligence based in Paris from May/June 2023</strong>.</br>
 
                 
-                [Naming] my skills:
+                My skills:
                 <ul>
                     
-                    <li>Python : OOP, Data prep</li>
+                    <li>Python : OOP, Data prepration, Data viz, ML, NLP</li>
                     
                     <li>Data viz : Loker Studio, Tableau, PowerBI, Streamlit (with plotly)</li>
                     
-                    <li>SQL : create query, DBT&rsquo;s model</li>
+                    <li>SQL : create complex query using DBT&rsquo;s model</li>
                     
                     <li>AI</li>
                     
@@ -1002,6 +1007,7 @@ Critical reading of scientific articles
                     <div class="text-center pt-3">
                         <a href="mailto:camille.lebrun.edu@gmail.com" class="btn">
                             Mail me
+                            
                         </a>
                     </div>
                     
@@ -1065,10 +1071,10 @@ Critical reading of scientific articles
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
             <div class="pb-2">
+
                 <a href="https://camlebrun.github.io/" title="Camille Lebrun">
-                    <img alt="Footer logo" src="/fav.png"
-                        height="40px" width="40px">
-                </a>
+            </div>
+            <div class="text-secondary">
             </div>
             &copy; 2022  All Rights Reserved
             <div class="text-secondary">
@@ -1078,12 +1084,12 @@ Critical reading of scientific articles
                 </span>
                 and
                 <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
+                    title="Designed and developed by gurusabarish"> Hugo Profile
                 </a>
             </div>
         </div>
     </div>
+    
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -1127,6 +1133,8 @@ Critical reading of scientific articles
     }
 </script>
 
+
+    <script src="/js/search.js"></script>
 
 
 
