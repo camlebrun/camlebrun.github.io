@@ -116,16 +116,6 @@ Camille Lebrun
 <body class="light" onload="loading()">
   
   
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
 
 
 
@@ -206,7 +196,7 @@ Camille Lebrun
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#achievements"
                             aria-label="achievements">
-                            Completed Projects
+                            Achievements
                         </a>
                     </li>
                     
@@ -222,29 +212,27 @@ Camille Lebrun
 
                     
                     
-
+                    
                     
                     <li class="nav-item navbar-text">
-                        
-                        <div class="text-center">
-                            <button id="theme-toggle">
-                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                                </svg>
-                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"></circle>
-                                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                                </svg>
-                            </button>
-                        </div>
+                        <a class="nav-link" href="/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
                     </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="" title="">
+                            
+                            
+                        </a>
+                    </li>
+                    
+                    
+
                     
 
                 </ul>
@@ -567,47 +555,48 @@ Camille Lebrun
         </svg>
     </div>
 </section>
-
 <section id="about" class="py-0 py-sm-5">
     <div class="container bg-transparent">
-        <h3 class="text-center bg-transparent">About Me</h3>
-        <div class="bg-transparent row justify-content-center px-3 py-5">
-            
-            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
-                <div class="image d-flex px-5">
-                    <img src="/images/logo.png" class="img-thumbnail mx-auto rounded-circle" alt="">
-                </div>
-            </div>
-            
-            <div class="col-sm-12 col-md-12 col-lg-8 content">
-                After a master’s degree in structural biochemistry I decided to focus on Data and artificial intelligence.
+      <h3 class="text-center bg-transparent">About Me</h3>
+      <div class="bg-transparent row justify-content-center px-3 py-5">
+        
+        <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+          <div class="image d-flex px-5">
+            <img src="/images/logo.png" class="img-thumbnail mx-auto rounded-circle" alt="">
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-12 col-lg-8 content">
+          After a master’s degree in structural biochemistry I decided to focus on Data and artificial intelligence.
 I did an internship as a data analyst at Click and Boat, which confirmed my choice. In order to deepen my skills in Data Science, I have integrated the master Data IA at Hetic in November 2022.
 I believe that Data and AI must be on the side of the Human, ethical at the heart of our practice.
 Projects that combine data, AI, and ethics for the common good are the projects that interest me the most.
 <br> </br>
-
-                
-                My skills:
-                <ul>
-                    
-                    <li>Python : OOP, Data prepration, Data viz, ML, NLP</li>
-                    
-                    <li>Data viz : Loker Studio, Tableau, PowerBI, plotly</li>
-                    
-                    <li>SQL : create complex query using DBT&rsquo;s model</li>
-                    
-                    <li>Git : version control, pull request, merge</li>
-                    
-                    <li>Streamlit : create web app with python</li>
-                    
-                    <li>AI : algorithm implementation in Python, use scikit-learn, tensorflow, keras</li>
-                    
-                </ul>
-                
-            </div>
+  
+          
+          <h4 class="text-center">My skills:</h4>
+          <ul class="d-flex flex-wrap">
+            
+            <li class="col-5 my-1">Python : OOP, Data modeling (regression, classification, PCA, &hellip; ), Data prepration and visualization</li>
+            
+            <li class="col-5 my-1">Data visualization : create powerful dashboard with  Loker Studio, Tableau, PowerBI, plotly</li>
+            
+            <li class="col-5 my-1">SQL : create complex query using DBT&rsquo;s model</li>
+            
+            <li class="col-5 my-1">Git : version control, pull request, merge</li>
+            
+            <li class="col-5 my-1">Streamlit : create web app with python</li>
+            
+            <li class="col-5 my-1">AI : algorithm implementation in Python, use scikit-learn, tensorflow, keras</li>
+            
+            <li class="col-5 my-1">Big Data : Hadoop, Spark, Hive, HDFS, MapReduce</li>
+            
+          </ul>
+          
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
 <section id="experience" class="py-5">
     <div class="container">
@@ -1083,7 +1072,7 @@ Critical reading of scientific articles
 
 <section id="achievements" class="py-5">
     <div class="container">
-        <h3 class="text-center">Completed Projects</h3>
+        <h3 class="text-center">Achievements</h3>
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-3 px-md-5 px-lg-5">
                 
@@ -1216,31 +1205,10 @@ Critical reading of scientific articles
     
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+    if (document.body.className.includes("light")) {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
     }
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-
 </script>
 
 <script>
