@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>pwd/</loc>
+    <loc>https://camlebrun.github.io/</loc>
   </url><url>
-    <loc>pwd/categories/</loc>
+    <loc>https://camlebrun.github.io/categories/</loc>
   </url><url>
-    <loc>pwd/tags/</loc>
+    <loc>https://camlebrun.github.io/tags/</loc>
   </url>
 </urlset>
